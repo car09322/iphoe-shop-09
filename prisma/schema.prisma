@@ -36,7 +36,7 @@ model Customer {
 model Order {
   id          Int         @id @default(autoincrement())
   customerId  Int
-  status      String
+  status      String      //
   total       Int
   trackingNo  String?
   createdAt   DateTime    @default(now())
