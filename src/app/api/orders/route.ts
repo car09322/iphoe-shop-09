@@ -36,6 +36,7 @@ export async function POST(req: Request) {
         data: {
           customerId: customer.id,
           total,
+          status: "PENDING",
           items: { create: itemsData },
         },
         include: { items: true, customer: true },
